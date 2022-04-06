@@ -59,7 +59,7 @@ selectcategory(id, name) {
     return (
       <div>
       <nav className="navbar navbar-expand-lg" style={
-        {backgroundColor: "#282A35"}} >
+        {backgroundColor: "#D9EAD3"}} >
         <div className="container-fluid text-white">
           { window.localStorage.getItem("user_role") !== 'DELIVERY_BOY' &&
             window.localStorage.getItem("user_role") !== 'ADMIN' &&

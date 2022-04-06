@@ -5,8 +5,11 @@ import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer"; 
 import logo from './banner.png';
 import ApiCustomerService from "../../services/customer/ApiCustomerService";
-
-
+import pic0 from "../../images/Fruits.jpg"
+import pic1 from "../../images/cover1.jpg"
+import pic2 from "../../images/cover2.jpg"
+import pic3 from "../../images/cover3.jpg"
+import pic4 from "../../images/cover4.jpg"
 
 class HomeScreen extends Component {
 
@@ -80,14 +83,44 @@ class HomeScreen extends Component {
         window.localStorage.setItem("product_id", product.id);
         this.props.history.push('/product-details');
     }
+    
 
 
     render() {
         return (
-            <div>
+            <div >
+                
                 <Navigation/>
                 <br></br>
-    
+                <div>
+                {/* <ImageBackground source={pic4} style={{width: '100%', height: '100%'}}>
+   <View style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, justifyContent: 'center', alignItems: 'center'}}>     
+   <Text>Centered text</Text>
+   </View>
+</ImageBackground> */}
+
+{/* <View style={styles.imageWrapper}>
+     <ImageBackground style={styles.theImage} source={{uri : item.imageUrl}}>
+          <Text>Hey</Text>
+     </ImageBackground>
+</View> */}
+</div>
+{/* <div  class="container">
+  <img src={pic4} alt="Notebook" style="width:1500px;"/>
+  <div class="content">
+    <h1>Heading</h1>
+    <p>Lorem ipsum..</p>
+  </div>
+</div> */}
+
+
+                <div>
+                <img src={pic4} width="100%" height="600px"></img>
+                
+
+                </div>
+                
+                <br></br>
                 <div>
                     <table>
                         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" >
@@ -102,23 +135,19 @@ class HomeScreen extends Component {
                                <div className="carousel-inner" >
                                     <div className="carousel-item active" data-bs-interval="2000">
                                     <Link to="/home">
-                                    <img src="https://cdn.discordapp.com/attachments/944832831690010634/959726176778207302/Screenshot_20220402-133108_2.png" className="d-block w-100 " alt="image1" />
+                                    <img src={pic1} width="1350px" height="500px"   alt="image1" />
                                     </Link>
                                     </div>
                                     <div className="carousel-item" data-bs-interval="2000">
-                                    <img src="https://cdn.discordapp.com/attachments/944832831690010634/959726176434286612/Screenshot_20220402-132938_2.png" className="d-block w-100 " alt="image2"/>
+                                    <img src={pic2} width="1350px" height="500px"  alt="image2"/>
                                     </div>
                                     <div className="carousel-item" data-bs-interval="2000">
-                                    <img src="https://images-na.ssl-images-amazon.com/images/G/31/img21/Fashion/15thFlip/AF/L1headers/SS22-PC-Header3000x770._CB628701441_.gif" className="d-block w-100 " alt="image3" />
+                                    <img src={pic3} width="1350px" height="500px"  alt="image3" />
                                     </div>
                                     <div className="carousel-item" data-bs-interval="2000">
-                                    <img src="https://cdn.discordapp.com/attachments/932171059178913862/943963470708220055/1242x450_HPSP.jpg" className="d-block w-100 " alt="image4" />
+                                    <img src={pic0} width="1350px" height="500px"  alt="image4" />
                                     </div>
-                                    <div className="carousel-item" data-bs-interval="2000">
                                     
-                                        <img src="https://cdn.discordapp.com/attachments/932171059178913862/943960308173643806/banner.jpg"  className="d-block w-100 " alt="image5" />
-                                    
-                                    </div>
                                 </div>
                                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"  data-bs-slide="prev">
                                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -133,7 +162,8 @@ class HomeScreen extends Component {
                 </div>
                 <br>
                 </br>
-                <img src="https://cdn.discordapp.com/attachments/932171059178913862/943977634583412746/fixban.jpg" width="100%"></img>
+                
+                
                 <div className="container " style={{width: "90%"}}>
                         <div class="row">
                             <div className="col-md-5"><hr /></div>

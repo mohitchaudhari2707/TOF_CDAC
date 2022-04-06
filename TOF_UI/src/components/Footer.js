@@ -28,7 +28,7 @@ export default class Footer extends Component {
                     </tr>
                     <tr>
                         <a href="/contactus" className="nav-link">
-                            <h6 className="nameColor13">Contact Us</h6>
+                            <h6 className="">Contact Us</h6>
                         </a>
                     </tr>
                     <tr>
@@ -57,7 +57,7 @@ export default class Footer extends Component {
                         <span
                         style={{ display: 'inline-block;', marginBottom: '1rem;' }}>
                         <a>
-                           8668259342 & 9673830095
+                           7776075203 & 9049584420
                         </a>
                         </span>
                         <br />
@@ -77,7 +77,7 @@ export default class Footer extends Component {
                 </table>
                 
                 <div class="copyright">
-                    <div>© By Rohit and Sagar 2022, AnyKart CDAC Project, INDIA</div>
+                    <div>© By Mohit and Dhanraj 2022, The Organic Farm CDAC Project, INDIA</div>
                 </div>
             </div>
             

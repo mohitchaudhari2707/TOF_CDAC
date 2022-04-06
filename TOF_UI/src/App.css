@@ -1,6 +1,7 @@
 .container{
    margin-top: 10px;
    text-align: center;
+   
 }
 
 .main{
@@ -81,6 +82,7 @@
 
  .content-wrap{
     flex: 1;
+    background-color: rgba(255, 255, 255, 0.953);
  }
  .footer {
    left: 0;
@@ -149,6 +151,9 @@
    background-image: linear-gradient(to right, #bee125, #ebda44, #9efe04, #edd33f);
    box-shadow: 0 4px 15px 0 rgba(231, 234, 65, 0.75);
 }
+
+
+ 
 
 ul li a {
    font-size: 1.1rem;

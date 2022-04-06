@@ -73,7 +73,7 @@ export default class AddProductFromSupplierScreen extends Component {
             <div>
                 <Navigation />
                 <div className="container">
-                <table class="table table-striped" >
+                <table class="" >
                     <thead>
                         <tr>
                         <th scope="col" >Product id</th>
