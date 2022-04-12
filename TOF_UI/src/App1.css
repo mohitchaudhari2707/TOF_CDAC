@@ -48,6 +48,10 @@
  .nameColor1{
    color: red;
 }
+.nameColor2
+{
+   color: green;
+}
  .position{
     float: right;
  }
@@ -79,9 +83,7 @@
     color: #FFFFFF;
  }
 
- .nameColor2{
-   color: #FFFFFF;
-}
+
 
 .btn4 {border-radius: 10px;
    font-size: 17px;

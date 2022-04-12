@@ -94,39 +94,40 @@ class CartScreen extends Component{
     return (
        <div>
            <Navigation/>
-            <div className="container">
-        <h2 className="text-center">Cart Details</h2>
-        {this.state.cart.length == 0 &&
-            <div className="container"><h5 className="nameColor1">{JSON.parse(window.localStorage.getItem("cart_size")) == 0 && this.state.sts}</h5></div>
-        }
-        {this.state.cart.length > 0 && 
-        <table className="table table-striped">
-        <thead>
-            <tr className="float-center">
-                <th >Product Name</th>
-                <th>Price</th>
-                <th>QTY</th>
-                <th>Grams</th>
-                <th>Delete</th>
-            </tr>
-        </thead>
-        <tbody>
-        
-        {this.state.cart.map(product =>
-                <tr key={product.id}>
-                    <td>{product.productName}</td>
-                    <td>{product.finalPrice}</td>
-                    <td>{product.qty}</td>
-                    <td>{product.grams}</td>
-                    <td>
-                    <button className="btn4 btn-danger" onClick={() => this.deleteProduct(product.id, product.qty)}>Delete</button>
-                    </td>
-                </tr>
-                )}
-        </tbody>         
-    </table>
-
-        }
+           <div className="container">
+                <h3 className='text-center'>Cart : </h3>
+                <div className="cart1">
+                    <table className="table table-striped">
+                    <thead>
+                        <tr className="float-center">
+                            <th>Product Name</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Total</th>
+                            <th>Delete</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <div className="container"><h5 className="nameColor1">{this.state.cart.length === 0 && this.state.message}</h5></div>
+                        {this.state.cart.map(
+                            product => 
+                            <tr key={product.id}>
+                                <td>{product.productName}</td>
+                                <td>{product.qty}</td>
+                                <td>{product.finalPrice}</td>
+                                <td>{product.finalPrice * product.qty}</td>
+                                <td><button className="btn4 btn-danger" onClick={() => this.deleteProduct(product.id, product.qty)}>Delete</button></td>
+                            </tr>
+                        )}
+                        </tbody>
+                    </table>
+                </div>
+                <div className="cart1">
+                    <h3>Total Amount : {this.state.tamt}</h3>
+                    <h3>Shipping Amount : {this.state.samt}</h3>
+                    <h3>Grand Total : {this.state.tamt + this.state.samt}</h3>
+                </div>
+                </div>
         <br/>
 
         <div className="float-end">
@@ -142,7 +143,7 @@ class CartScreen extends Component{
         <br/>
         <br/>
     </div>
-       </div>
+       
     );
     }
 }

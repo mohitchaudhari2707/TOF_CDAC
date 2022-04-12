@@ -1,3 +1,7 @@
+body { 
+   padding-top: 50px; 
+}
+
 .container{
    margin-top: 10px;
    text-align: center;
@@ -46,13 +50,16 @@
  .nameColor1{
    color: red;
 }
+
+.nameColor2
+{
+   color: green;
+}
  .position{
     float: right;
  }
 
- .nameColour2{
-   color: white;
-}
+
  
  .position1{
    float: center;
@@ -151,6 +158,19 @@
    background-image: linear-gradient(to right, #bee125, #ebda44, #9efe04, #edd33f);
    box-shadow: 0 4px 15px 0 rgba(231, 234, 65, 0.75);
 }
+.text-centre{
+   background-position: center;
+   margin-left: 3ch;
+   background-repeat: no-repeat;
+   width: 1300px;
+   height: 300px;
+   display: block;
+   overflow: hidden;
+   background-color: transparent;
+   border-radius: 25px;
+   
+
+}
 
 
  
@@ -176,3 +196,107 @@ ul li a {
    background-color:#ebda44;
    border-radius: 50%;
  }
+
+ /* navbar */ 
+
+.search-box {
+   position: relative;
+   height: 40px;
+   margin-left: 0em;
+    /* margin:auto;  */
+}
+
+.search-box input {
+   border: 0;
+   border-radius: 3px !important;
+   padding-right: 30px;
+   font-size: 15px;
+   margin: auto;
+}
+
+.search-box .input-group-btn {
+   position: absolute;
+   right: 0;
+   top: 0;
+   z-index: 999;
+   padding-top: 0.1em;
+    /* height: 2em; / */
+}
+
+.search-box .input-group-btn button {
+   
+   align-content: center;
+   height: 30px;
+   
+} 
+
+.search-box .input-group-btn button:hover::after,
+.search-box .input-group-btn button:active,
+.search-box .input-group-btn button:focus:hover::after {
+   color: rgba(126, 185, 10, 0.705);
+}
+
+.navbar {
+   /* / overflow: hidden; / */
+   background-color: #333;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 99;
+   transition: top 0.2s;
+   padding: 20px 10px;
+}
+
+.navbar .nav-item.nav-link {
+   float: left;
+   display: flex;
+   position: fixed;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 10px 12px;
+   text-decoration: none;
+   border-radius: 4px;
+}
+
+
+.navbar .nav-item.nav-link:hover {
+   background: #ddd;
+   color: black;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+   padding-right: .7rem;
+   padding-left: .7rem;
+}
+
+.navitems {
+   margin-left: 0.2em;
+}
+
+.logo_name {
+   font-family: cursive;
+   font-weight: bold;
+   margin-left: 0.8rem;
+   margin-top: 1rem;
+   color: rgb(2, 159, 28);
+}
+
+
+#dropdown ul li{
+   position: relative;
+   list-style: none;
+   display:inline-block;
+}
+
+#dropdown ul li a{
+   display:block;
+   text-decoration: none;
+   /* / color: white; */
+}
+
+#dropdown ul li a :hover
+{
+   display: block;
+   background:#232F3E;
+   position: relative;
+}

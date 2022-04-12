@@ -10,7 +10,7 @@ const PrivacyPolicyScreen = () => {
             <h5>Personal Information</h5>
             <p>
             The Organic farm (“The Organic farm”) is the licensed owner of 
-            the brand The Organic farm and the website mygreenmart.in 
+            the brand The Organic farm and the website TheOrganicfarm.in 
             (”The Site”). The Organic farm respects your privacy. This 
             Privacy Policy provides succinctly the manner your data 
             collected and used by The Organic farm on the Site. As a 

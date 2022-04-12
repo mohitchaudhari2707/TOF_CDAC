@@ -7,8 +7,8 @@ const ContactUsScreen = () => {
             <Navigation/>
             <div className="main btn4">
                 <h3>Contact Us : </h3>
-                <h5>Email : greenmart@gmail.com</h5>
-                <h5>Contact No : +91 7898826422</h5>
+                <h5>Email : tof@gmail.com</h5>
+                <h5>Contact No : +91 7776075203</h5>
             </div> 
         </div>    
     );

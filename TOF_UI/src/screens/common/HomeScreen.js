@@ -10,7 +10,12 @@ import pic1 from "../../images/cover1.jpg"
 import pic2 from "../../images/cover2.jpg"
 import pic3 from "../../images/cover3.jpg"
 import pic4 from "../../images/cover4.jpg"
-
+import pic5 from "../../images/vegetablebaket.jpg"
+import pic6 from "../../images/herbs.jpg"
+import pic7 from "../../images/cocnut.jpg"
+import pic8 from "../../images/summer coolers.jpg"
+import pic9 from "../../images/summer melon.jpg"
+import pic10 from "../../images/summer veggies.jpg"
 class HomeScreen extends Component {
 
     constructor(props) {
@@ -112,8 +117,61 @@ class HomeScreen extends Component {
     <p>Lorem ipsum..</p>
   </div>
 </div> */}
-
-
+    <div>
+                    <table>
+                        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" >
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 6"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 7"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 8"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 9"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 10"></button>
+                                </div>
+    
+                               <div class="text-centre" className="carousel-inner" >
+                                    <div  className="carousel-item active" data-bs-interval="2000">
+                                    <Link to="/home">
+                                    <img class="text-centre" src={pic5}  w   alt="image1" />
+                                    </Link>
+                                    </div>
+                                    <div className="carousel-item" data-bs-interval="2000">
+                                    <img class="text-centre" src={pic6}   alt="image2"/>
+                                    </div>
+                                    <div className="carousel-item" data-bs-interval="2000">
+                                    <img class="text-centre" src={pic7}   alt="image3" />
+                                    </div>
+                                    <div className="carousel-item" data-bs-interval="2000">
+                                    <img class="text-centre" src={pic8}   alt="image4" />
+                                    </div>
+                                    <div className="carousel-item" data-bs-interval="2000">
+                                    <img class="text-centre" src={pic9}   alt="image4" />
+                                    </div>
+                                    <div className="carousel-item" data-bs-interval="2000">
+                                    <img class="text-centre" src={pic10}  alt="image4" />
+                                    </div>
+                                    
+                                    
+                                </div>
+                                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"  data-bs-slide="prev">
+                                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span className="visually-hidden">Previous</span>
+                                </button>
+                                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"  data-bs-slide="next">
+                                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span className="visually-hidden">Next</span>
+                                </button>
+                                </div>
+                    </table>               
+                </div>
+                <br></br>
+                <hr  style={{
+    color: '	#000000',
+    
+    backgroundColor: '#000000',
+    height: 3,
+    borderColor : '	#000000'
+}}/>
                 <div>
                 <img src={pic4} width="100%" height="600px"></img>
                 
@@ -123,13 +181,13 @@ class HomeScreen extends Component {
                 <br></br>
                 <div>
                     <table>
-                        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" >
+                        <div id="carouselExampleInterval1" class="carousel slide" data-bs-ride="carousel" >
                                 <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 0"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 4"></button>
                                 </div>
     
                                <div className="carousel-inner" >
@@ -148,20 +206,27 @@ class HomeScreen extends Component {
                                     <img src={pic0} width="1350px" height="500px"  alt="image4" />
                                     </div>
                                     
+                                    
                                 </div>
-                                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"  data-bs-slide="prev">
+                                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval1"  data-bs-slide="prev">
                                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span className="visually-hidden">Previous</span>
                                 </button>
-                                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"  data-bs-slide="next">
+                                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval1"  data-bs-slide="next">
                                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span className="visually-hidden">Next</span>
                                 </button>
                                 </div>
+
+                                
+
+
+
                     </table>               
                 </div>
                 <br>
                 </br>
+              
                 
                 
                 <div className="container " style={{width: "90%"}}>
@@ -191,13 +256,13 @@ class HomeScreen extends Component {
                     </div>
                 </div>
 
-                <div className="container " style={{width: "90%"}}>
+                {/* <div className="container " style={{width: "90%"}}>
                         <div class="row">
                             <div className="col-md-5"><hr /></div>
-                            <div className="col-md-2"><h4>Top Products</h4></div>
+                            <div className="col-md-2"><h4></h4></div>
                             <div className="col-md-5"><hr /></div>
                         </div>
-                </div>
+                </div> */}
 
                 <div className="container">
                     <div className="row row-center">
